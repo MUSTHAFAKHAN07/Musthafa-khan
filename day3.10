@@ -1,0 +1,28 @@
+import getpass
+import string
+import os
+
+users = ['user1', 'user2', 'user3']
+pins = ['1234', '2222', '3333']
+amounts = [1000, 2000, 3000]
+count = 0
+print("****************************************************************************")
+print("*                                                                          *")
+print("*                   Welcome to  ATM SYSTEM                                 *")
+print("*                                                                          *")
+print("****************************************************************************")
+while True:
+	user = input('ENTER USER NAME: ')
+	user = user.lower()
+	if user in users:
+		if user == users[0]:
+			n = 0
+		elif user == users[1]:
+			n = 1
+		else:
+			n = 2
+		break
+	else:
+		print('----------------')
+		print('****************')
+		print('INVALI
